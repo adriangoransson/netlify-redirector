@@ -1,3 +1,10 @@
 [[edge_functions]]
   function = "redirect"
   path = "/*"
+
+[template]
+  incoming-hooks = ["Contentful"]
+
+[template.environment]
+  REDIRECT_HOST = "your new host address (<scheme>://<host>)"
+
