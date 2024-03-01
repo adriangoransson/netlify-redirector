@@ -14,5 +14,5 @@ export default async (req: Request) => {
 
   console.log(`${req.url} → ${transformed}`);
 
-  return Response.redirect(transformed);
+  return Response.redirect(transformed, 301);
 };
